@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Canned Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+<div id="loginOverlay">
+  <div class="login-circle">
+    <div class="login-inner" id="loginFormContent">
+      <div class="login-mark">C</div>
+      <h3>Canned Tool</h3>
+      <p class="login-sub">Protected By Password</p>
+      <input id="loginPwd" class="neu-input" type="password" placeholder="Enter password" autocomplete="off" dir="ltr">
+      <button id="loginBtn" class="neu-btn">Login</button>
+      <div id="loginMsg"></div>
+    </div>
+    <div class="login-success" id="loginSuccess">
+      <div class="success-check">✓</div>
+      <h3>Welcome Back!</h3>
+      <p class="login-sub">Login Successful</p>
+    </div>
+  </div>
+  <div class="login-footnote">For internal use only — Digital Chat Team</div>
+</div>
+
+<div id="protectedApp">
+
+  <div class="splash" id="splash">
+    <div class="splash-box">
+      <div class="load-line"><span class="ok">✓</span> جارٍ تجهيز الأداة</div>
+      <div class="load-line"><span class="ok">✓</span> جارٍ تحميل الكندات</div>
+      <div class="load-line">لحظات...</div>
+    </div>
+  </div>
+
+  <div class="header-wrap">
+    <div class="brand">
+      <span class="mark">C</span>
+      <span class="name">canned<em>.</em>tool</span>
+    </div>
+    <div class="ticker">
+      <div class="ticker-track">⚠️ تذكر دائماً: استخدامك لهذه الأداة على مسؤوليتك الشخصية، ويجب التأكد من الويكي.</div>
+    </div>
+    <button class="theme-toggle" id="themeToggle" title="تغيير المظهر">🌙</button>
+  </div>
+
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="sidebar-title">
+          <span class="label">القائمة</span>
+          <span class="tool-count" id="toolCount">0</span>
+        </div>
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input type="text" id="searchInput" placeholder="ابحث عن كاند..." autocomplete="off">
+        </div>
+      </div>
+      <div class="sheet-list" id="sheetList"></div>
+    </aside>
+
+    <main class="main">
+      <div class="main-head">
+        <div class="main-head-copy">
+          <span class="hash">#</span>
+          <h1 id="sectionTitle">اختر شيت للبدء</h1>
+        </div>
+        <div class="main-badge"><b id="resultCount">0</b> كاند</div>
+      </div>
+      <div class="grid" id="cardsGrid"><div class="empty">جارٍ تحميل البيانات... ⏳</div></div>
+    </main>
+  </div>
+
+  <div class="footer-wrapper">
+    <span class="fseg"><span class="dot"></span> Ready</span>
+    <span class="sep">·</span>
+    <span class="fseg">version 7<span class="sep">·</span>Developed By : Geek</span>
+  </div>
+
+  <audio id="clickSound" preload="auto">
+    <source src="data:audio/mp3;base64,//uQZAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAACcQCA..." type="audio/mp3">
+  </audio>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
+<script src="script.js"></script>
+</body>
+</html>
