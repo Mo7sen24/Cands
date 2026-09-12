@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 2. نظام تسجيل الدخول
-  const FIXED_PASSWORD = 'Chat2025';
+  const FIXED_PASSWORD = 'AMS123';
   const overlay = document.getElementById('loginOverlay');
   const btn = document.getElementById('loginBtn');
   const pwd = document.getElementById('loginPwd');
